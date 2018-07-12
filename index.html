@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Russo One'>
+<style>
+    body{
+      background-image:url("batbackground.jpg");
+      no-repeat;
+      background-size: cover;
+    }
+    #toptitle{
+      font-family: Russo One;
+      font-size: 7vw;
+      font-weight: bold;
+      text-align: center;
+      width:100vw;
+      margin-top: 0vw;
+      margin-bottom: 0vw;
+      animation-name: flashing;		/*This is to create flashing text*/
+   		animation-duration: 0.5s;
+    	animation-timing-function: linear;
+    	animation-iteration-count: infinite;
+    	animation-direction: alternate;
+    	animation-play-state: running;
+		  animation-delay: 0s;
+		  -webkit-text-stroke-width: 2px;		/*Border on text*/
+    	-webkit-text-stroke-color: black;
+    }
+    #instruct{
+      font-family: Russo One;
+      font-size: 4vw;
+      font-weight: bold;
+      text-align: center;
+      position-absolute;
+      bottom:0px;
+      width:100vw;
+      padding:0px;
+      margin-top: 0vw;
+      margin-bottom: 0vw;
+      animation-name: flashing;		/*This is to create flashing text*/
+      animation-duration: 0.5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-play-state: running;
+      animation-delay: .25s;
+      -webkit-text-stroke-width: 2px;		/*Border on text*/
+      -webkit-text-stroke-color: black;
+    }
+    @keyframes flashing {
+      from{color:white;}
+      to{color:orange;}
+    }
+    canvas{
+      padding-top: 5vw;
+      padding-bottom: 5vw;
+      margin:auto;
+    }
+</style>
+</head>
+<body>
+    <p id="toptitle">Happy Birthday Noah Davis!</p>
+    <script src="phaser.js"></script>
+    <script src="game.js"></script>
+    <p id="instruct">Spacebar = Noah Jumps<br></p>
+    <p id="instruct">Left/Right Arrows = Noah Moves</p>
+</body>
+</html>
