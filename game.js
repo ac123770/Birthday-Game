@@ -15,14 +15,14 @@ var winningScore = 100;
 // add collectable items to the game
 function addItems() {
   items = game.add.physicsGroup();
-  createItem(25, 50, 'shield');
+  createItem(50, 50, 'shield');
   createItem(50, 250, 'skull');
-  createItem(125, 225, 'bat');
-  createItem(250, 100, 'bat');
-  createItem(425, 100, 'skull');
-  createItem(375, 325, 'bat');
-  createItem(750, 100, 'bat');
-  createItem(950, 250, 'bat');
+  createItem(150, 225, 'bat');
+  createItem(275, 100, 'bat');
+  createItem(450, 100, 'skull');
+  createItem(425, 325, 'bat');
+  createItem(750, 25, 'bat');
+  createItem(900, 250, 'bat');
   
  
   
@@ -66,7 +66,7 @@ function itemHandler(player, item) {
   if (item.key === 'bat'){
     currentScore = currentScore + 20;
   } else if (item.key === 'skull'){
-    currentScore = currentScore - 20;
+    currentScore = currentScore - 10;
   } else if (item.key === 'shield'){
     currentScore = currentScore + 50;
   }
@@ -151,7 +151,7 @@ window.onload = function () {
     }
     // when the player wins the game
     if (won) {
-      winningMessage.text = "YOU SAVE THE CITY!";
+      winningMessage.text = "WAY TO GO NOAH, YOU SAVED THE CITY!";
     }
   }
 
