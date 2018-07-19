@@ -77,7 +77,7 @@ function badgeHandler(player, badge) {
 
 // setup game when the web page loads
 window.onload = function () {
-  game = new Phaser.Game(1400, 450, Phaser.AUTO, '', { preload: preload, create: create, update: update, render: render });
+  game = new Phaser.Game(1150, 450, Phaser.AUTO, '', { preload: preload, create: create, update: update, render: render });
 
   // before the game begins
   function preload() {
