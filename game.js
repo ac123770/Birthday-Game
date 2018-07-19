@@ -15,15 +15,19 @@ var winningScore = 100;
 // add collectable items to the game
 function addItems() {
   items = game.add.physicsGroup();
+  createItem(25, 50, 'shield');
+  createItem(50, 250, 'skull');
+  createItem(125, 225, 'bat');
+  createItem(250, 100, 'bat');
+  createItem(425, 100, 'skull');
   createItem(375, 325, 'bat');
-  createItem(100, 225, 'bat');
-  createItem(575, 100, 'bat');
-  createItem(650, 250, 'bat');
-  createItem(225, 200, 'bat');
-  createItem(375, 100, 'skull');
-  createItem(375, 450, 'skull');
-  createItem(50, 300, 'skull');
-  createItem(125, 50, 'shield');
+  createItem(750, 100, 'bat');
+  createItem(950, 250, 'bat');
+  
+ 
+  
+  
+  
 }
 
 // add platforms to the game
@@ -33,8 +37,8 @@ function addPlatforms() {
   platforms.create(100, 275, 'platform');
   platforms.create(375, 175, 'platform');
   platforms.create(400, 375, 'platform');
-  platforms.create(650, 150, 'platform');
-  platforms.create(850, 300, 'platform');
+  platforms.create(700, 125, 'platform');
+  platforms.create(800, 300, 'platform');
   
   
   platforms.setAll('body.immovable', true);
@@ -51,7 +55,7 @@ function createItem(left, top, image) {
 // create the winning badge and add to screen
 function createBadge() {
   badges = game.add.physicsGroup();
-  var badge = badges.create(700, 400, 'trophy');
+  var badge = badges.create(1000, 400, 'trophy');
   badge.animations.add('spin');
   badge.animations.play('spin', 10, true);
 }
