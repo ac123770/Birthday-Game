@@ -19,8 +19,9 @@ function addItems() {
   createItem(50, 250, 'skull');
   createItem(150, 225, 'bat');
   createItem(275, 100, 'bat');
-  createItem(450, 100, 'skull');
   createItem(425, 325, 'bat');
+  createItem(450, 100, 'skull');
+  createItem(650, 200, 'skull');
   createItem(750, 25, 'bat');
   createItem(900, 250, 'bat');
   
