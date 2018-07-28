@@ -96,7 +96,7 @@ window.onload = function () {
 
     //Load spritesheets
     // game.load.spritesheet('player', 'chalkers.png', 48, 62);
-    game.load.spritesheet('player', 'Noah.jpg', 44, 50);
+    game.load.spritesheet('player', 'Noah.jpg', 79, 87);
     game.load.spritesheet('bat', 'Batman.jpg', 55, 31);
     game.load.spritesheet('trophy', 'Trophy.jpg', 42, 54);
     game.load.spritesheet('skull', 'skullauto.jpg', 43.625, 40);
