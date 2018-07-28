@@ -36,8 +36,8 @@ function addPlatforms() {
   platforms = game.add.physicsGroup();
   platforms.create(0, 100, 'platform');
   platforms.create(100, 275, 'platform');
-  platforms.create(375, 175, 'platform');
-  platforms.create(400, 375, 'platform');
+  platforms.create(375, 375, 'platform');
+  platforms.create(400, 175, 'platform');
   platforms.create(700, 125, 'platform');
   platforms.create(800, 300, 'platform');
   
