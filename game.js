@@ -152,7 +152,7 @@ window.onload = function () {
     }
     // when the player wins the game
     if (won) {
-      winningMessage.text = "WAY TO GO NOAH, YOU SAVED THE CITY!";
+      winningMessage.text = "AWESOME JOB NOAH, YOU SAVED THE CITY!";
     }
   }
 
