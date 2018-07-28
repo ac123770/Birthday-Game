@@ -20,7 +20,7 @@ function addItems() {
   createItem(150, 225, 'bat');
   createItem(275, 100, 'bat');
   createItem(425, 325, 'bat');
-  createItem(475, 175, 'skull');
+  createItem(475, 150, 'skull');
   createItem(650, 200, 'skull');
   createItem(750, 25, 'bat');
   createItem(900, 250, 'bat');
