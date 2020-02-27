@@ -133,13 +133,13 @@ window.onload = function () {
     // is the left cursor key presssed?
     if (cursors.left.isDown) {
       player.animations.play('walk', 10, true);
-      player.body.velocity.x = -300;
+      player.body.velocity.x = -400;
       player.scale.x = - 1;
     }
     // is the right cursor key pressed?
     else if (cursors.right.isDown) {
       player.animations.play('walk', 10, true);
-      player.body.velocity.x = 300;
+      player.body.velocity.x = 400;
       player.scale.x = 1;
     }
     // player doesn't move
@@ -152,7 +152,7 @@ window.onload = function () {
     }
     // when the player wins the game
     if (won) {
-      winningMessage.text = "AWESOME Karim, YOU SAVED THE CITY!";
+      winningMessage.text = "AWESOME Karim, YOU HAVE SAVED Gotham City!";
     }
   }
 
