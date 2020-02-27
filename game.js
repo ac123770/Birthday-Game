@@ -96,7 +96,7 @@ window.onload = function () {
 
     //Load spritesheets
     // game.load.spritesheet('player', 'chalkers.png', 48, 62);
-    game.load.spritesheet('player', 'Noah.jpg', 79, 87);
+    game.load.spritesheet('player', 'Karim.jpg', 79, 87);
     game.load.spritesheet('bat', 'Batman.jpg', 55, 31);
     game.load.spritesheet('trophy', 'Trophy.jpg', 42, 54);
     game.load.spritesheet('skull', 'skullauto.jpg', 43.625, 40);
@@ -117,14 +117,14 @@ window.onload = function () {
 
     cursors = game.input.keyboard.createCursorKeys();
     jumpButton = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-    text = game.add.text(16, 16, "NOAH'S SCORE: " + currentScore, { font: "bold 24px Arial", fill: "#B70E0E" });
+    text = game.add.text(16, 16, "Karim'S Score: " + currentScore, { font: "bold 24px Arial", fill: "#B70E0E" });
     winningMessage = game.add.text(game.world.centerX, 275, "", { font: "bold 48px Arial", fill: "#B70E0E" });
     winningMessage.anchor.setTo(0.5, 1);
   }
 
   // while the game is running
   function update() {
-    text.text = "NOAH'S SCORE: " + currentScore;
+    text.text = "Karim's Score: " + currentScore;
     game.physics.arcade.collide(player, platforms);
     game.physics.arcade.overlap(player, items, itemHandler);
     game.physics.arcade.overlap(player, badges, badgeHandler);
@@ -152,7 +152,7 @@ window.onload = function () {
     }
     // when the player wins the game
     if (won) {
-      winningMessage.text = "AWESOME NOAH, YOU SAVED THE CITY!";
+      winningMessage.text = "AWESOME Karim, YOU SAVED THE CITY!";
     }
   }
 
