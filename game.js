@@ -152,7 +152,7 @@ window.onload = function () {
     }
     // when the player wins the game
     if (won) {
-      winningMessage.text = "AWESOME Karim, YOU HAVE SAVED Gotham City!";
+      winningMessage.text = "Awesome Karim, you have saved Gotham City!";
     }
   }
 
